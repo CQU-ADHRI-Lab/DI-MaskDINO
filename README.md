@@ -1,5 +1,5 @@
 <div align=center>
-<img src="figures/analyse.png" width="580px">
+<img src="figures/analyse.png" width="480px">
 </div>
 
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.16707">DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model</a></h2>
