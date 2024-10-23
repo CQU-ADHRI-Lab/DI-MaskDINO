@@ -1,7 +1,13 @@
+<h2 align="center"> <a href="https://arxiv.org/abs/2410.16707">DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model</a></h2>
+<h4 align="center" color="A0A0A0"> Zhixiong Nan, Xianghong Li, Tao Xiang, Jifeng Dai</h4>
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+
+[![arXiv](https://img.shields.io/badge/Arxiv-2410.16707-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.16707)
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/CQU-ADHRI-Lab/DI-MaskDINO)
+[![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/CQU-ADHRI-Lab/DI-MaskDINO/blob/main/LICENSE)
+
 # DI-MaskDINO
 This is the official implementation of the paper "DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model". Our code is based on [detectron2](https://github.com/facebookresearch/detectron2).
-
-Authors: Zhixiong Nan, Xianghong Li, Tao Xiang, Jifeng Dai
 
 <div align="center">
   <img src="figures/framework.png"/>
