@@ -1,7 +1,3 @@
-<div align=center>
-<img src="figures/analyse.png" width="480px">
-</div>
-
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.16707">DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model</a></h2>
 <h4 align="center" color="A0A0A0"> Zhixiong Nan, Xianghong Li, Tao Xiang, Jifeng Dai</h4>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
@@ -13,6 +9,11 @@
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/CQU-ADHRI-Lab/DI-MaskDINO/blob/main/LICENSE)
 
 </div>
+
+<div align=center>
+<img src="figures/results.gif" width="960px">
+</div>
+
 
 
 # DI-MaskDINO
