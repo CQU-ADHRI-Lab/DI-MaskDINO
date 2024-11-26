@@ -36,7 +36,7 @@ If you find our work helpful for your research, please consider citing the follo
 ```BibTeX
 @misc{nan2024di,
       title={DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model}, 
-      author={Zhixiong Nan and Xianghong Li and Xiang Tao and Jifeng Dai},
+      author={Zhixiong Nan and Xianghong Li and Tao Xiang and Jifeng Dai},
       year={2024},
       eprint={2410.16707},
       archivePrefix={arXiv},
