@@ -28,3 +28,18 @@ The code for DI-MaskSINO will be released here.
 
 [2024/9] DI-MaskDINO has been accepted at NeurIPS 2024 as a poster!
 
+
+## <a name="CitingDIMaskDINO"></a>Citing DI-MaskDINO
+
+If you find our work helpful for your research, please consider citing the following BibTeX entry.
+
+```BibTeX
+@misc{nan2024di,
+      title={DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model}, 
+      author={Zhixiong Nan, Xianghong Li, Xiang Tao, and Jifeng Dai},
+      year={2024},
+      eprint={2410.16707},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
