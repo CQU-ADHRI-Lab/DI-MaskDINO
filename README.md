@@ -34,12 +34,10 @@ The code for DI-MaskSINO will be released here.
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
 ```BibTeX
-@misc{nan2024di,
-      title={DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model}, 
-      author={Zhixiong Nan and Xianghong Li and Tao Xiang and Jifeng Dai},
-      year={2024},
-      eprint={2410.16707},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{nan2024di,
+  title={DI-MaskDINO: A Joint Object Detection and Instance Segmentation Model}, 
+  author={Zhixiong Nan and Xianghong Li and Tao Xiang and Jifeng Dai},
+  booktitle={Proceedings of the Neural Information Processing Systems},
+  year={2024}
 }
 ```
