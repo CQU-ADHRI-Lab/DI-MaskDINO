@@ -63,15 +63,42 @@ cd dimaskdino/modeling/pixel_decoder/ops
 sh make.sh
 ```
 
-## Models
+## Models {#Models}
 
-We provide the checkpoint of the following models:
-
-| Name                                                                                     | Backbone  | Epochs | **_AP<sup> box</sup>_** | **_AP<sup> mask</sup>_** | Download  |
-|------------------------------------------------------------------------------------------| -------- | ------ |----------------------|-----------------------| --------- |
-| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_12ep.yaml) | R50     | 12     | 46.9                 | 42.3                  | [model](https://drive.google.com/file/d/1oQociMQSt_jmQtH3pm92i6zat8Gt83Oh/view?usp=drive_link) |
-| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_24ep.yaml) | R50     | 24     | 49.6                 | 44.8                  | [model](https://drive.google.com/file/d/1FjoYiwGnrk_bk0nUM7GPeIMGENVLdx7n/view?usp=drive_link) |
-| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_50ep.yaml) | R50      | 50     | 51.9                 | 46.7                  | [model](https://drive.google.com/file/d/17_SErWYBWWCdYfR6i7OJtcBIlCDES10z/view?usp=drive_link) |
+<table style="width: 100%; border-collapse: collapse;"  id="model-table">
+    <tr style="border: 1px solid black; background-color: #f2f2f2; text-align: center; padding: 8px;">
+        <th align="center">Name</th>
+        <th align="center">Backbone</th>
+        <th align="center">Epochs</th>
+        <th align="center"><i>AP<sup style="font-size: smaller;">box</sup></i></th>
+        <th align="center"><i>AP<sup style="font-size: smaller;">mask</sup></i></th>
+        <th align="center">Download</th>
+    </tr>
+    <tr align="center">
+        <td align="center"><a href="./configs/dimaskdino_r50_4scale_bs16_12ep.yaml" style="text-decoration: none; color: black;">DI-MaskDINO</a></td>
+        <td align="center">ResNet50</td>
+        <td align="center">12</td>
+        <td align="center">46.9</td>
+        <td align="center">42.3</td>
+        <td align="center"><a href="https://drive.google.com/file/d/1oQociMQSt_jmQtH3pm92i6zat8Gt83Oh/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
+    </tr>
+    <tr align="center">
+        <td align="center"><a href="./configs/dimaskdino_r50_4scale_bs16_24ep.yaml" style="text-decoration: none; color: black;">DI-MaskDINO</a></td>
+        <td align="center">ResNet50</td>
+        <td align="center">24</td>
+        <td align="center">49.6</td>
+        <td align="center">44.8</td>
+        <td align="center"><a href="https://drive.google.com/file/d/1FjoYiwGnrk_bk0nUM7GPeIMGENVLdx7n/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
+    </tr>
+    <tr align="center">
+        <td align="center"><a href="./configs/dimaskdino_r50_4scale_bs16_50ep.yaml" style="text-decoration: none; color: black;">DI-MaskDINO</a></td>
+        <td align="center">ResNet50</td>
+        <td align="center">50</td>
+        <td align="center">51.9</td>
+        <td align="center">46.7</td>
+        <td align="center"><a href="https://drive.google.com/file/d/17_SErWYBWWCdYfR6i7OJtcBIlCDES10z/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
+    </tr>
+</table>
 
 ## Run
 
@@ -87,9 +114,9 @@ python train_net.py --num-gpus 8 --config-file configs/dimaskdino_r50_4scale_bs1
 
 You can download our pretrained models and evaluate them with the following commands. 
 ```sh
-python train_net.py --eval-only --num-gpus 8 --config-file config_path MODEL.WEIGHTS /path/to/checkpoint_file
+python train_net.py --eval-only --num-gpus 8 --config-file /path/to/config_file MODEL.WEIGHTS /path/to/checkpoint_file
 ```
-For example, to reproduce our result, you can copy the config path from the table, download the pretrained checkpoint into `/path/to/checkpoint_file`, and run 
+For example, to reproduce our result, you can copy the config path from the model table, download the pretrained checkpoint into `/path/to/checkpoint_file`, and run 
 ```sh
 python train_net.py --eval-only --num-gpus 8 --config-file configs/dimaskdino_r50_4scale_bs16_12ep.yaml MODEL.WEIGHTS /path/to/checkpoint_file
 ```
@@ -110,7 +137,7 @@ If you find our work helpful for your research, please consider citing the follo
 
 ## Acknowledgement
 
-Many thanks to these excellent opensource projects 
+Many thanks to these excellent opensource projects: 
 * [MaskDINO](https://github.com/IDEA-Research/MaskDINO)
 * [Mask2Former](https://github.com/facebookresearch/Mask2Former) 
 * [DINO](https://github.com/IDEA-Research/DINO)
