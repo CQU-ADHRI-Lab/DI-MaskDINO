@@ -15,7 +15,7 @@ Please see [Getting Started with Detectron2](https://github.com/facebookresearch
 3. Run it with:
 ```
 cd demo/
-python demo.py --config-file configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_12ep.yaml \
+python demo.py --config-file configs/dimaskdino_r50_4scale_bs16_12ep.yaml \
   --input input1.jpg input2.jpg \
   [--other-options]
   --opts MODEL.WEIGHTS /path/to/model_file

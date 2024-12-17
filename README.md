@@ -69,9 +69,9 @@ We provide the checkpoint of the following models:
 
 | Name                                                                                     | Backbone  | Epochs | **_AP<sup>box</sup>_** | **_AP<sup>mask</sup>_** | Download  |
 |------------------------------------------------------------------------------------------| -------- | ------ |----------------------|-----------------------| --------- |
-| [DI-MaskDINO](./configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_12ep.yaml) | R50     | 12     | 46.9                 | 42.3                  | [model](https://drive.google.com/file/d/1oQociMQSt_jmQtH3pm92i6zat8Gt83Oh/view?usp=drive_link) |
-| [DI-MaskDINO](./configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_24ep.yaml) | R50     | 24     | 49.6                 | 44.8                  | [model](https://drive.google.com/file/d/1FjoYiwGnrk_bk0nUM7GPeIMGENVLdx7n/view?usp=drive_link) |
-| [DI-MaskDINO](./configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_50ep.yaml) | R50      | 50     | 51.9                 | 46.7                  | [model](https://drive.google.com/file/d/17_SErWYBWWCdYfR6i7OJtcBIlCDES10z/view?usp=drive_link) |
+| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_12ep.yaml) | R50     | 12     | 46.9                 | 42.3                  | [model](https://drive.google.com/file/d/1oQociMQSt_jmQtH3pm92i6zat8Gt83Oh/view?usp=drive_link) |
+| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_24ep.yaml) | R50     | 24     | 49.6                 | 44.8                  | [model](https://drive.google.com/file/d/1FjoYiwGnrk_bk0nUM7GPeIMGENVLdx7n/view?usp=drive_link) |
+| [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_50ep.yaml) | R50      | 50     | 51.9                 | 46.7                  | [model](https://drive.google.com/file/d/17_SErWYBWWCdYfR6i7OJtcBIlCDES10z/view?usp=drive_link) |
 
 ## Run
 
@@ -80,7 +80,7 @@ We provide the checkpoint of the following models:
 Train DI-MaskDINO with 8 GPUs:
 
 ```sh
-python train_net.py --num-gpus 8 --config-file configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_12ep.yaml OUTPUT_DIR /path/to/output
+python train_net.py --num-gpus 8 --config-file configs/dimaskdino_r50_4scale_bs16_12ep.yaml OUTPUT_DIR /path/to/output
 ```
 
 ### Evaluation
@@ -91,7 +91,7 @@ python train_net.py --eval-only --num-gpus 8 --config-file config_path MODEL.WEI
 ```
 For example, to reproduce our result, you can copy the config path from the table, download the pretrained checkpoint into `/path/to/checkpoint_file`, and run 
 ```sh
-python train_net.py --eval-only --num-gpus 8 --config-file configs/coco/instance-segmentation/dimaskdino_r50_4scale_bs16_12ep.yaml MODEL.WEIGHTS /path/to/checkpoint_file
+python train_net.py --eval-only --num-gpus 8 --config-file configs/dimaskdino_r50_4scale_bs16_12ep.yaml MODEL.WEIGHTS /path/to/checkpoint_file
 ```
 
 
