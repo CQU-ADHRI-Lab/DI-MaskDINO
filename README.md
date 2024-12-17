@@ -63,7 +63,7 @@ cd dimaskdino/modeling/pixel_decoder/ops
 sh make.sh
 ```
 
-## Models {#Models}
+## Models
 
 <table style="width: 100%; border-collapse: collapse;"  id="model-table">
     <tr style="border: 1px solid black; background-color: #f2f2f2; text-align: center; padding: 8px;">
