@@ -23,7 +23,7 @@ from detectron2.data.detection_utils import read_image
 from detectron2.projects.deeplab import add_deeplab_config
 from detectron2.utils.logger import setup_logger
 
-from maskdino import add_maskdino_config
+from dimaskdino import add_dimaskdino_config
 from predictor import VisualizationDemo
 
 
@@ -35,7 +35,7 @@ def setup_cfg(args):
     # load config from file and command-line arguments
     cfg = get_cfg()
     add_deeplab_config(cfg)
-    add_maskdino_config(cfg)
+    add_dimaskdino_config(cfg)
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     cfg.freeze()
