@@ -10,7 +10,7 @@ Please see [Getting Started with Detectron2](https://github.com/facebookresearch
 1. Pick a model and its config file
 - for example
    - config file at `configs/dimaskdino_r50_4scale_bs16_12ep.yaml`.
-   - Model file [DI-MaskDINO (12ep) ](./configs/dimaskdino_r50_4scale_bs16_12ep.yaml)
+   - Model file [DI-MaskDINO (12ep) ](../configs/dimaskdino_r50_4scale_bs16_12ep.yaml)
 2. We provide `demo.py` that is able to demo builtin configs. 
 3. Run it with:
 ```
