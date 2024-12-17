@@ -26,7 +26,7 @@ This is the official implementation of the paper "DI-MaskDINO: A Joint Object De
 Motivated by an interesting phenomenon that _the performance of object detection lags behind that of instance segmentation at the beignning decoder layer_, **DI-MaskDINO** is proposed to alleviate the detection-segmentation imbalance issue.
 **DI-MaskDINO** is implemented by configuring proposed **_De-Imbalance (DI)_** module and **_Balance-Aware Tokens Optimization (BATO)_** module to MaskDINO.
 **_DI_** module contributes to strengthen the detection task at the beginning decoder layer to balance the performance of the two tasks, and the core of **_DI_** module is _residual double-selection mechanism_.
-**DI-MaskDINO** outperforms existing SOTA joint object detection and instance segmentation model MaskDINO (**+1.2** _AP<sup>box</sup>_ and **+0.9** _AP<sup>mask</sup>_ on COCO, using ResNet50 backbone with 12 training epochs), SOTA object detection model DINO (**+1.0** _AP<sup>box</sup>_ on COCO), and SOTA segmentation model Mask2Former(**+3.0** _AP<sup>mask</sup>_ on COCO).
+**DI-MaskDINO** outperforms existing SOTA joint object detection and instance segmentation model MaskDINO (**+1.2** _AP<sup> box</sup>_ and **+0.9** _AP<sup> mask</sup>_ on COCO, using ResNet50 backbone with 12 training epochs), SOTA object detection model DINO (**+1.0** _AP<sup> box</sup>_ on COCO), and SOTA segmentation model Mask2Former(**+3.0** _AP<sup> mask</sup>_ on COCO).
 
 ## Update
 [2024/12] Code for [DI-MaskDINO](https://github.com/CQU-ADHRI-Lab/DI-MaskDINO) is available here!
@@ -67,7 +67,7 @@ sh make.sh
 
 We provide the checkpoint of the following models:
 
-| Name                                                                                     | Backbone  | Epochs | **_AP<sup>box</sup>_** | **_AP<sup>mask</sup>_** | Download  |
+| Name                                                                                     | Backbone  | Epochs | **_AP<sup> box</sup>_** | **_AP<sup> mask</sup>_** | Download  |
 |------------------------------------------------------------------------------------------| -------- | ------ |----------------------|-----------------------| --------- |
 | [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_12ep.yaml) | R50     | 12     | 46.9                 | 42.3                  | [model](https://drive.google.com/file/d/1oQociMQSt_jmQtH3pm92i6zat8Gt83Oh/view?usp=drive_link) |
 | [DI-MaskDINO](./configs/dimaskdino_r50_4scale_bs16_24ep.yaml) | R50     | 24     | 49.6                 | 44.8                  | [model](https://drive.google.com/file/d/1FjoYiwGnrk_bk0nUM7GPeIMGENVLdx7n/view?usp=drive_link) |
