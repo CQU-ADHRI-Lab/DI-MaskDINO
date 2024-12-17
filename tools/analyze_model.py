@@ -29,7 +29,7 @@ import sys
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 # fmt: on
 
-from maskdino import add_maskdino_config
+from dimaskdino import add_dimaskdino_config
 
 logger = logging.getLogger("detectron2")
 
@@ -38,7 +38,7 @@ def setup(args):
     if args.config_file.endswith(".yaml"):
         cfg = get_cfg()
         add_deeplab_config(cfg)
-        add_maskdino_config(cfg)
+        add_dimaskdino_config(cfg)
         cfg.merge_from_file(args.config_file)
         cfg.DATALOADER.NUM_WORKERS = 0
         cfg.merge_from_list(args.opts)
